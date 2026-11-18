@@ -1,0 +1,31 @@
+# Python environments & bytecode
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Testing & linting caches
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Generated synthetic data & SQLite DB (regenerated via python -m data.generate_data)
+data/sensor_readings.csv
+data/maintenance.db
+
+# Keep results/*.json committed
+!results/*.json
+
+# OS / editor / logs
+.DS_Store
+*.log
+node_modules/
+dist/
+build/

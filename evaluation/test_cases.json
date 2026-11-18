@@ -1,0 +1,92 @@
+[
+  {
+    "id": "TC-01",
+    "machine_id": "M1",
+    "sensor": "temperature",
+    "lookback_hours": 500,
+    "notes": "Operator reported elevated housing warmth during afternoon shift.",
+    "expected_machine": "M1",
+    "expected_action_keywords": ["inspect", "coolant", "oil", "filter", "flush", "clean", "check", "monitor"]
+  },
+  {
+    "id": "TC-02",
+    "machine_id": "M1",
+    "sensor": "vibration",
+    "lookback_hours": 500,
+    "notes": "Check bearing vibration trend and recent RPM spikes.",
+    "expected_machine": "M1",
+    "expected_action_keywords": ["bearing", "align", "balance", "inspect", "lubricate", "torque", "check"]
+  },
+  {
+    "id": "TC-03",
+    "machine_id": "M2",
+    "sensor": "pressure",
+    "lookback_hours": 750,
+    "notes": "Line pressure fluctuation noticed near pump discharge.",
+    "expected_machine": "M2",
+    "expected_action_keywords": ["seal", "leak", "strainer", "valve", "inspect", "replace", "pressure", "check"]
+  },
+  {
+    "id": "TC-04",
+    "machine_id": "M2",
+    "sensor": "temperature",
+    "lookback_hours": 750,
+    "notes": "Verify whether RTD readings showed frozen values or overheating.",
+    "expected_machine": "M2",
+    "expected_action_keywords": ["sensor", "rtd", "thermocouple", "recalibrate", "coolant", "oil", "inspect", "check"]
+  },
+  {
+    "id": "TC-05",
+    "machine_id": "M3",
+    "sensor": "vibration",
+    "lookback_hours": 500,
+    "notes": "Routine vibration health audit prior to planned outage.",
+    "expected_machine": "M3",
+    "expected_action_keywords": ["bearing", "vibration", "align", "inspect", "schedule", "check", "monitor"]
+  },
+  {
+    "id": "TC-06",
+    "machine_id": "M3",
+    "sensor": "rpm",
+    "lookback_hours": 300,
+    "notes": "Check recent VFD speed surges and rotor load.",
+    "expected_machine": "M3",
+    "expected_action_keywords": ["vfd", "rpm", "rotor", "balance", "inspect", "recalibrate", "check", "monitor"]
+  },
+  {
+    "id": "TC-07",
+    "machine_id": "M4",
+    "sensor": "temperature",
+    "lookback_hours": 500,
+    "notes": "Highest baseline unit; evaluate overheating risk over next 24 hours.",
+    "expected_machine": "M4",
+    "expected_action_keywords": ["coolant", "oil", "filter", "temperature", "inspect", "clean", "check", "monitor"]
+  },
+  {
+    "id": "TC-08",
+    "machine_id": "M4",
+    "sensor": "pressure",
+    "lookback_hours": 1000,
+    "notes": "Check for hydraulic pressure loss or flat-line transducer drops.",
+    "expected_machine": "M4",
+    "expected_action_keywords": ["seal", "transmitter", "strainer", "replace", "inspect", "check", "recalibrate"]
+  },
+  {
+    "id": "TC-09",
+    "machine_id": "M5",
+    "sensor": "vibration",
+    "lookback_hours": 500,
+    "notes": "Assess bearing condition and coupling stability.",
+    "expected_machine": "M5",
+    "expected_action_keywords": ["bearing", "coupling", "align", "inspect", "lubricate", "balance", "check"]
+  },
+  {
+    "id": "TC-10",
+    "machine_id": "M5",
+    "sensor": "rpm",
+    "lookback_hours": 240,
+    "notes": "End-of-quarter reliability sign-off check.",
+    "expected_machine": "M5",
+    "expected_action_keywords": ["inspect", "monitor", "check", "recalibrate", "balance", "schedule", "verify"]
+  }
+]

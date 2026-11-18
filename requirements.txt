@@ -1,0 +1,31 @@
+# API & validation (Pydantic v2 required by FastAPI, LangChain 0.3, and CrewAI)
+fastapi>=0.115.0,<0.116.0          # Web framework compatible with Pydantic >=2.7
+uvicorn[standard]>=0.32.0,<0.35.0  # ASGI server for FastAPI
+pydantic>=2.7.4,<3.0.0             # Shared Pydantic v2 range required by LangChain 0.3 & CrewAI
+
+# Scientific & ML stack (numpy <2.0 ensures compatibility with faiss-cpu & statsmodels wheels)
+numpy>=1.26.4,<2.0.0               # Compatible across pandas 2.2, scikit-learn, statsmodels & faiss-cpu
+pandas>=2.2.0,<2.3.0               # Time-series data manipulation supporting numpy 1.26
+scikit-learn>=1.5.0,<1.7.0         # IsolationForest & GradientBoostingRegressor
+statsmodels>=0.14.4,<0.15.0        # ARIMA time-series modeling
+
+# LangChain & Google Gemini SDKs (aligned on langchain-core >=0.3.27,<0.4.0)
+langchain>=0.3.12,<0.4.0           # LangChain 0.3 core orchestration
+langchain-core>=0.3.27,<0.4.0      # Minimum >=0.3.27 required by langchain-google-genai 2.0.x
+langchain-community>=0.3.12,<0.4.0 # FAISS vector store integration on 0.3.x
+langchain-google-genai>=2.0.7,<2.1.0  # Google Gemini embeddings compatible with langchain-core 0.3
+google-generativeai>=0.8.3,<0.9.0  # Required <0.9.0 by langchain-google-genai 2.0.x
+
+# CrewAI & LiteLLM (compatible range avoiding strict httpx/litellm resolver conflicts)
+crewai>=0.86.0,<0.101.0            # Multi-agent orchestration supporting CrewAI LLM + BaseTool
+litellm>=1.52.0,<1.65.0            # Unified Gemini/LLM router required by CrewAI
+
+# Hybrid RAG retrieval
+faiss-cpu>=1.9.0,<2.0.0            # Dense vector similarity search
+rank-bm25>=0.2.2,<0.3.0            # Sparse BM25 lexical retrieval
+
+# Utilities, HTTP client, testing & linting
+python-dotenv>=1.0.1,<2.0.0        # Environment variable loading from .env
+httpx>=0.27.0,<0.29.0              # Async/sync HTTP client compatible with LiteLLM & FastAPI TestClient
+pytest>=8.3.0,<9.0.0               # Test runner
+ruff>=0.8.0,<0.10.0                # Fast Python linter

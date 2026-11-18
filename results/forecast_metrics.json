@@ -1,0 +1,400 @@
+{
+  "horizon_hours": 24,
+  "test_hours": 168,
+  "aggregate_metrics": {
+    "naive_last_value": {
+      "mean_mae": 7.3377,
+      "mean_rmse": 13.338
+    },
+    "arima": {
+      "mean_mae": 8.7721,
+      "mean_rmse": 14.5404
+    },
+    "gradient_boosting": {
+      "mean_mae": 3.3172,
+      "mean_rmse": 11.5791
+    }
+  },
+  "per_series": [
+    {
+      "machine_id": "M1",
+      "sensor": "temperature",
+      "best_model": "gradient_boosting",
+      "model_metrics": {
+        "naive_last_value": {
+          "mae": 1.725,
+          "rmse": 2.2208
+        },
+        "arima": {
+          "mae": 1.7344,
+          "rmse": 2.234
+        },
+        "gradient_boosting": {
+          "mae": 1.4539,
+          "rmse": 2.1446
+        }
+      }
+    },
+    {
+      "machine_id": "M1",
+      "sensor": "vibration",
+      "best_model": "gradient_boosting",
+      "model_metrics": {
+        "naive_last_value": {
+          "mae": 0.181,
+          "rmse": 0.3917
+        },
+        "arima": {
+          "mae": 0.1682,
+          "rmse": 0.3877
+        },
+        "gradient_boosting": {
+          "mae": 0.1193,
+          "rmse": 0.3644
+        }
+      }
+    },
+    {
+      "machine_id": "M1",
+      "sensor": "pressure",
+      "best_model": "gradient_boosting",
+      "model_metrics": {
+        "naive_last_value": {
+          "mae": 1.4731,
+          "rmse": 1.7969
+        },
+        "arima": {
+          "mae": 1.1715,
+          "rmse": 1.4497
+        },
+        "gradient_boosting": {
+          "mae": 0.6476,
+          "rmse": 0.8607
+        }
+      }
+    },
+    {
+      "machine_id": "M1",
+      "sensor": "rpm",
+      "best_model": "gradient_boosting",
+      "model_metrics": {
+        "naive_last_value": {
+          "mae": 20.7517,
+          "rmse": 47.3291
+        },
+        "arima": {
+          "mae": 25.0378,
+          "rmse": 49.2731
+        },
+        "gradient_boosting": {
+          "mae": 11.0408,
+          "rmse": 43.7108
+        }
+      }
+    },
+    {
+      "machine_id": "M2",
+      "sensor": "temperature",
+      "best_model": "gradient_boosting",
+      "model_metrics": {
+        "naive_last_value": {
+          "mae": 1.805,
+          "rmse": 2.2713
+        },
+        "arima": {
+          "mae": 1.8277,
+          "rmse": 2.2864
+        },
+        "gradient_boosting": {
+          "mae": 0.8565,
+          "rmse": 1.5833
+        }
+      }
+    },
+    {
+      "machine_id": "M2",
+      "sensor": "vibration",
+      "best_model": "gradient_boosting",
+      "model_metrics": {
+        "naive_last_value": {
+          "mae": 0.1851,
+          "rmse": 0.3441
+        },
+        "arima": {
+          "mae": 0.1532,
+          "rmse": 0.336
+        },
+        "gradient_boosting": {
+          "mae": 0.0982,
+          "rmse": 0.3308
+        }
+      }
+    },
+    {
+      "machine_id": "M2",
+      "sensor": "pressure",
+      "best_model": "gradient_boosting",
+      "model_metrics": {
+        "naive_last_value": {
+          "mae": 1.9538,
+          "rmse": 2.3473
+        },
+        "arima": {
+          "mae": 1.95,
+          "rmse": 2.3406
+        },
+        "gradient_boosting": {
+          "mae": 0.6105,
+          "rmse": 0.7573
+        }
+      }
+    },
+    {
+      "machine_id": "M2",
+      "sensor": "rpm",
+      "best_model": "gradient_boosting",
+      "model_metrics": {
+        "naive_last_value": {
+          "mae": 27.2176,
+          "rmse": 49.7179
+        },
+        "arima": {
+          "mae": 43.0404,
+          "rmse": 64.5667
+        },
+        "gradient_boosting": {
+          "mae": 12.2785,
+          "rmse": 44.9073
+        }
+      }
+    },
+    {
+      "machine_id": "M3",
+      "sensor": "temperature",
+      "best_model": "gradient_boosting",
+      "model_metrics": {
+        "naive_last_value": {
+          "mae": 2.1853,
+          "rmse": 2.7282
+        },
+        "arima": {
+          "mae": 2.0552,
+          "rmse": 2.5759
+        },
+        "gradient_boosting": {
+          "mae": 0.8675,
+          "rmse": 1.463
+        }
+      }
+    },
+    {
+      "machine_id": "M3",
+      "sensor": "vibration",
+      "best_model": "arima",
+      "model_metrics": {
+        "naive_last_value": {
+          "mae": 0.1898,
+          "rmse": 0.3637
+        },
+        "arima": {
+          "mae": 0.1514,
+          "rmse": 0.335
+        },
+        "gradient_boosting": {
+          "mae": 0.1265,
+          "rmse": 0.3392
+        }
+      }
+    },
+    {
+      "machine_id": "M3",
+      "sensor": "pressure",
+      "best_model": "gradient_boosting",
+      "model_metrics": {
+        "naive_last_value": {
+          "mae": 1.5329,
+          "rmse": 1.9069
+        },
+        "arima": {
+          "mae": 1.4,
+          "rmse": 1.7599
+        },
+        "gradient_boosting": {
+          "mae": 0.6719,
+          "rmse": 0.8271
+        }
+      }
+    },
+    {
+      "machine_id": "M3",
+      "sensor": "rpm",
+      "best_model": "gradient_boosting",
+      "model_metrics": {
+        "naive_last_value": {
+          "mae": 27.548,
+          "rmse": 47.3781
+        },
+        "arima": {
+          "mae": 30.3651,
+          "rmse": 49.0442
+        },
+        "gradient_boosting": {
+          "mae": 11.8732,
+          "rmse": 44.1162
+        }
+      }
+    },
+    {
+      "machine_id": "M4",
+      "sensor": "temperature",
+      "best_model": "gradient_boosting",
+      "model_metrics": {
+        "naive_last_value": {
+          "mae": 2.0104,
+          "rmse": 2.5996
+        },
+        "arima": {
+          "mae": 2.0579,
+          "rmse": 2.6683
+        },
+        "gradient_boosting": {
+          "mae": 0.8005,
+          "rmse": 1.4681
+        }
+      }
+    },
+    {
+      "machine_id": "M4",
+      "sensor": "vibration",
+      "best_model": "gradient_boosting",
+      "model_metrics": {
+        "naive_last_value": {
+          "mae": 0.2136,
+          "rmse": 0.3427
+        },
+        "arima": {
+          "mae": 0.1464,
+          "rmse": 0.3094
+        },
+        "gradient_boosting": {
+          "mae": 0.1102,
+          "rmse": 0.2867
+        }
+      }
+    },
+    {
+      "machine_id": "M4",
+      "sensor": "pressure",
+      "best_model": "gradient_boosting",
+      "model_metrics": {
+        "naive_last_value": {
+          "mae": 1.2491,
+          "rmse": 1.5854
+        },
+        "arima": {
+          "mae": 1.2434,
+          "rmse": 1.5781
+        },
+        "gradient_boosting": {
+          "mae": 0.6593,
+          "rmse": 0.8112
+        }
+      }
+    },
+    {
+      "machine_id": "M4",
+      "sensor": "rpm",
+      "best_model": "gradient_boosting",
+      "model_metrics": {
+        "naive_last_value": {
+          "mae": 28.0629,
+          "rmse": 49.8904
+        },
+        "arima": {
+          "mae": 28.438,
+          "rmse": 50.252
+        },
+        "gradient_boosting": {
+          "mae": 11.3317,
+          "rmse": 43.5717
+        }
+      }
+    },
+    {
+      "machine_id": "M5",
+      "sensor": "temperature",
+      "best_model": "gradient_boosting",
+      "model_metrics": {
+        "naive_last_value": {
+          "mae": 2.5095,
+          "rmse": 3.1041
+        },
+        "arima": {
+          "mae": 2.5895,
+          "rmse": 3.1787
+        },
+        "gradient_boosting": {
+          "mae": 0.8135,
+          "rmse": 1.5249
+        }
+      }
+    },
+    {
+      "machine_id": "M5",
+      "sensor": "vibration",
+      "best_model": "gradient_boosting",
+      "model_metrics": {
+        "naive_last_value": {
+          "mae": 0.2329,
+          "rmse": 0.424
+        },
+        "arima": {
+          "mae": 0.1591,
+          "rmse": 0.3991
+        },
+        "gradient_boosting": {
+          "mae": 0.1273,
+          "rmse": 0.3785
+        }
+      }
+    },
+    {
+      "machine_id": "M5",
+      "sensor": "pressure",
+      "best_model": "gradient_boosting",
+      "model_metrics": {
+        "naive_last_value": {
+          "mae": 1.3569,
+          "rmse": 1.662
+        },
+        "arima": {
+          "mae": 1.3677,
+          "rmse": 1.6748
+        },
+        "gradient_boosting": {
+          "mae": 0.6996,
+          "rmse": 0.9326
+        }
+      }
+    },
+    {
+      "machine_id": "M5",
+      "sensor": "rpm",
+      "best_model": "gradient_boosting",
+      "model_metrics": {
+        "naive_last_value": {
+          "mae": 24.371,
+          "rmse": 48.3557
+        },
+        "arima": {
+          "mae": 30.3842,
+          "rmse": 54.1593
+        },
+        "gradient_boosting": {
+          "mae": 11.157,
+          "rmse": 41.2034
+        }
+      }
+    }
+  ]
+}
